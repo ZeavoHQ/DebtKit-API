@@ -5,7 +5,7 @@ You can pass leads from your own site or application to DebtKit, by using HTTP P
 
 You will be required to provide your DebtKit Account ID and API Key, which can be retrieved under Options -> API in DebtKit. Only administrators can retieve this information.
 
-You must also pass the name, phone and email parameters for each lead although the parameters can be empty.
+You must also pass the name, phone and email parameters for each lead although these parameters can be empty.
 
 ```
 
