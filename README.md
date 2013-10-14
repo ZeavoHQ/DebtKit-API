@@ -40,7 +40,9 @@ curl_close($ch);
 HTTP Response Codes
 
 200 - All OK, lead successfully added to DebtKit
+
 403 - Missing or incorect Account ID and/or API Key
+
 500 - Server Error or Missing Lead Data
 
 For developer support, email us at support@zeavo.com
