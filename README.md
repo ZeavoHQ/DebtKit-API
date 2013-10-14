@@ -14,7 +14,7 @@ $url 	= 'http://api.debtkit.co.uk/';
 
 // Set the POST parameters
 $fields = array(
-	'account'   	=>  	'YOUR ACCOUNT ID HERE',
+	'account'	=>	'YOUR ACCOUNT ID HERE',
 	'key'       	=>  	'YOUR API KEY HERE',
 	'name' 		=> 	urlencode( 'John Smith' ),
 	'phone' 	=> 	urlencode( '08001234567' ),
