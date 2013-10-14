@@ -37,8 +37,9 @@ curl_close($ch);
 
 ```
 
+
 HTTP Response Codes
-///
+
 
 200 - All OK, lead successfully added to DebtKit
 
