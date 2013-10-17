@@ -16,14 +16,14 @@ $fields = array(
 $ch = curl_init();
 
 // Set the cURL options
-curl_setopt( $ch,CURLOPT_URL, $url );
-curl_setopt( $ch,CURLOPT_POST, count($fields) );
-curl_setopt( $ch,CURLOPT_POSTFIELDS, http_build_query( $fields ) );
+curl_setopt( $ch, CURLOPT_URL, $url );
+curl_setopt( $ch, CURLOPT_POST, count( $fields ) );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, http_build_query( $fields ) );
 
 // Execute the cURL request
-$result = curl_exec($ch);
+$result = curl_exec( $ch );
 
 // Close the cURL request
-curl_close($ch);
+curl_close( $ch );
 
 ?>
