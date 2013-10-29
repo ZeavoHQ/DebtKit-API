@@ -10,7 +10,7 @@ You must also pass the name, phone and email parameters for each lead although t
 ```
 
 // Set the host
-$url 	= 'http://api.debtkit.co.uk/';
+$url 	= 'https://api.debtkit.co.uk/';
 
 // Set the POST parameters
 $fields = array(
