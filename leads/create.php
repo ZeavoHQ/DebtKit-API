@@ -4,7 +4,7 @@ $fields = array(
     'account'   	=>  999,
     'key'       	=>  '1RBrXUqIpUcyKma5',
     'introducer'	=>  999,
-    'group'		 =>  999,
+    'group'		    =>  999,
     'data'      	=>  json_encode( array( 'name' => $_POST[ 'name' ], 'phone' => $_POST[ 'phone' ], 'email' => $_POST[ 'email' ] ) )
 );
 
