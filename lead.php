@@ -8,7 +8,7 @@ $fields = array(
     'account'   	=>  1,
     'key'       	=>  '1RBrXUqIpUcyKma5',
     'introducer'	=>  1,
-    'group'	=>  1,
+    'group'		=>  1,
     'data'      	=>  json_encode( array( 'name' => $_POST[ 'name' ], 'phone' => $_POST[ 'phone' ], 'email' => $_POST[ 'email' ] ) )
 );
 	
