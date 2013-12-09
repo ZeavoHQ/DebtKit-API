@@ -14,7 +14,7 @@ Custom fields can also be sent with the leads by adding to the JSON string.
 ```
 
 // Set the host
-$url    = 'https://api.debtkit.co.uk/';
+$url    = 'https://api.debtkit.co.uk/leads/new';
 	
 // Set the POST parameters
 $fields = array(
