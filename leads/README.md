@@ -3,7 +3,7 @@ Leads
 
 ## Create Lead ##
 
-`POST /leads/create.json` will create a new lead
+`POST /leads/create.json` will create a new lead.
 
 ```
 	
