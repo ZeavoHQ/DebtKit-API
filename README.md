@@ -21,7 +21,7 @@ $fields = array(
     'account'   	=>  1,
     'key'       	=>  '1RBrXUqIpUcyKma5',
     'introducer'	=>  1,
-    'group'		=>  1,
+    'group'			=>  1,
     'data'      	=>  json_encode( array( 'name' => $_POST[ 'name' ], 'phone' => $_POST[ 'phone' ], 'email' => $_POST[ 'email' ] ) )
 );
 	
@@ -43,7 +43,7 @@ curl_close( $ch );
 ```
 
 
-HTTP Response Codes
+### HTTP Response Codes ###
 
 
 200 - All OK, lead successfully added to DebtKit
@@ -52,7 +52,7 @@ HTTP Response Codes
 
 500 - Server Error or Missing Lead Data
 
-Lead Group IDs
+### Lead Group IDs ###
 
 1 - Web
 
