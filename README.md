@@ -55,7 +55,10 @@ HTTP Response Codes
 Lead Group IDs
 
 1 - Web
+
 2 - Hotkey
+
 3 - Data
+
 
 For developer support, email us at support@zeavo.com
