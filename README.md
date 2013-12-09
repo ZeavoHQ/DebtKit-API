@@ -19,6 +19,10 @@ This data is then POSTed as part of the API request.
 
 We only support JSON for serialization of data. **All API URLs end in .json to indicate that they accept and return JSON.**
 
+## API Endpoints ##
+
+[https://github.com/zeavouk/DebtKit-API/tree/master/leads]Leads
+
 ## Support ##
 
 For developer support, email us at support@zeavo.com or tweet us @DebtKit
