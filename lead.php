@@ -1,7 +1,7 @@
 <?php
 
 // Set the host
-$url    = 'https://api.debtkit.co.uk/';
+$url    = 'https://api.debtkit.co.uk/leads/new';
 	
 // Set the POST parameters
 $fields = array(
