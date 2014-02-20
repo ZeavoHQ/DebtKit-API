@@ -18,7 +18,7 @@ For details on what ID variables to pass to the API, contact [support@debtkit.co
 $fields = array(
     'account'     =>  999,
     'key'         =>  '1RBrXUqIpUcyKma5',
-    'application' =>  999'
+    'application' =>  999
 );
 
 $ch = curl_init();
