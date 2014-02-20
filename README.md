@@ -1,7 +1,7 @@
 DebtKit API
 =======
 
-The DebtKit API allows third-party websites and applications to integrate with the Leads module. This means developers can import leads into DebtKit and retrieve a list of leads currently stored in the system. This is an API that uses JSON for serialization.
+The DebtKit API allows third-party websites and applications to integrate with the DebtKit platform. This means developers can read and write data to DebtKit. This is an API that uses JSON for serialization.
 
 ## Making A Request ##
 
