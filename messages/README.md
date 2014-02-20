@@ -5,7 +5,7 @@ Messages
 
 For details on what ID variables to pass to the API, contact [support@debtkit.co.uk](mailto:support@debtkit.co.uk)
 
-## List Users ##
+## List Messages ##
 
 `POST /messages/get.json` will list all Email and SMS messaging methods for an application.
 
