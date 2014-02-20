@@ -3,7 +3,7 @@ Leads
 
 `*` Represents a required variable
 
-For details on what ID variables to pass to the API, see [Lead IDs](https://github.com/zeavouk/DebtKit-API/tree/master/leads/id.md)
+For details on what ID variables to pass to the API, contact [support@debtkit.co.uk](mailto:support@debtkit.co.uk)
 
 ## Create Lead ##
 
