@@ -25,4 +25,4 @@ We only support JSON for serialization of data. **All API URLs end in .json to i
 
 ## Support ##
 
-For developer support, email us at support@zeavo.com or tweet us [@DebtKit](https://twitter.com/DebtKit)
+For developer support, email us at [support@debtkit.co.uk](support@debtkit.co.uk) or tweet us [@DebtKit](https://twitter.com/DebtKit)
