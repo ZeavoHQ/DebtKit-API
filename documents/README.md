@@ -7,7 +7,7 @@ For details on what ID variables to pass to the API, contact [support@debtkit.co
 
 ## List Documents ##
 
-`POST /documents/all.json` will list all payments.
+`POST /documents/all.json` will list all documents.
 
 `* account` is your Account ID<br />
 `* key` is your API Key<br />
