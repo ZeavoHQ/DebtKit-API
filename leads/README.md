@@ -125,7 +125,7 @@ $data = array(
     'id'            =>	999,
     'stage_id'      =>  999,
     'status_id'	    =>	999,
-    'user'          =>	999
+    'user_id'       =>	999
 );
 	
 $fields = array(
