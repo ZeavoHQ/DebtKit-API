@@ -117,20 +117,21 @@ curl_close( $ch );
 
 `* account` is your Account ID<br />
 `* key` is your API Key<br />
-`* id` is a valid Lead ID<br />
-`* stage` is a valid Stage ID<br />
-`* reason` is a valid Reason ID<br />
-`* user` is a valid User ID
+`* data` is the JSON formatted API request data
 
 ```
+
+$data = array(
+    'id'            =>	999,
+    'stage_id'      =>  999,
+    'status_id'	    =>	999,
+    'user'          =>	999
+);
 	
 $fields = array(
     'account'      =>  999,
     'key'          =>  '1RBrXUqIpUcyKma5',
-    'id'           =>  999,
-    'reason'       =>  999,
-    'stage'        =>  999,
-    'user'         =>  999
+    'data'         =>  json_encode( $data )
 );
 
 $ch = curl_init();
