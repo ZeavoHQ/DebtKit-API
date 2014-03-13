@@ -11,18 +11,30 @@ For details on what ID variables to pass to the API, contact [support@debtkit.co
 
 `* account` is your Account ID<br />
 `* key` is your API Key<br />
-`* introducer` is an Introducer ID<br />
-`* group` is a valid Lead Group ID<br />
-`* data` is the JSON encoded lead data
+`* data` is the JSON formatted lead data
 
 ```
+
+$data 	=array(
+    'title' => 'Mr',
+    'first_names' => 'John',
+    'surname' => 'Smith',
+    'phone' => '0161 123 4567',
+    'phone_type' => 'home',
+    'email_address' => 'john.smith@debtkit.co.uk',
+    'introducer_id' => 999,
+    'advisor_id' => 999,
+    'product_id' => 999,
+    'custom' => array(
+        'Debt Level' => '3000',
+        'Contact Method' => 'Home Phone at Weekends'
+    )
+);
 	
 $fields = array(
     'account'    =>  999,
     'key'        =>  '1RBrXUqIpUcyKma5',
-    'introducer' =>  999,
-    'group'      =>  999,
-    'data'       =>  json_encode( array( 'name' => $_POST[ 'name' ], 'phone' => $_POST[ 'phone' ], 'email' => $_POST[ 'email' ] ) )
+    'data'       =>  json_encode( $data )
 );
 
 $ch = curl_init();
