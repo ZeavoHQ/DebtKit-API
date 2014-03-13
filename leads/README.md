@@ -11,7 +11,7 @@ For details on what ID variables to pass to the API, contact [support@debtkit.co
 
 `* account` is your Account ID<br />
 `* key` is your API Key<br />
-`* data` is the JSON formatted lead data
+`* data` is the JSON formatted API request data
 
 ```
 
@@ -53,10 +53,7 @@ curl_close( $ch );
 
 `* account` is your Account ID<br />
 `* key` is your API Key<br />
-`daterange` is a valid optional Date Range<br />
-`stage` is an optional valid Stage ID<br />
-`introducer` is an optional Introducer ID<br />
-`advisor` is an optional Advisor ID
+`* data` is the JSON formatted API request data
 
 ```
 
