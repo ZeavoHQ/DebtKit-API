@@ -16,17 +16,17 @@ For details on what ID variables to pass to the API, contact [support@debtkit.co
 ```
 
 $data 	=array(
-    'title' => 'Mr',
-    'first_names' => 'John',
-    'surname' => 'Smith',
-    'phone' => '0161 123 4567',
-    'phone_type' => 'home',
-    'email_address' => 'john.smith@debtkit.co.uk',
-    'introducer_id' => 999,
-    'advisor_id' => 999,
-    'product_id' => 999,
+    'title'              => 'Mr',
+    'first_names'        => 'John',
+    'surname'            => 'Smith',
+    'phone'              => '0161 123 4567',
+    'phone_type'         => 'home',
+    'email_address'      => 'john.smith@debtkit.co.uk',
+    'introducer_id'      => 999,
+    'advisor_id'         => 999,
+    'product_id'         => 999,
     'custom' => array(
-        'Debt Level' => '3000',
+        'Debt Level'     => '3000',
         'Contact Method' => 'Home Phone at Weekends'
     )
 );
@@ -59,14 +59,20 @@ curl_close( $ch );
 `advisor` is an optional Advisor ID
 
 ```
+
+$data = array(
+    'daterange'     =>	'month',
+    'stage_id'      =>  999,
+    'status_id'	    =>	999,
+    'product_id'    =>	999,
+    'advisor_id'    =>  999,
+    'introducer_id' =>  999
+);
 	
 $fields = array(
     'account'      =>  999,
     'key'          =>  '1RBrXUqIpUcyKma5',
-    'daterange'    =>  'month',
-    'stage'        =>  1,
-    'introducer'   =>  999,
-    'advisor'      =>  999
+    'data'         =>  json_encode( $data )
 );
 
 $ch = curl_init();
