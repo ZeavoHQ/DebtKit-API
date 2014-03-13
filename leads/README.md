@@ -87,14 +87,19 @@ curl_close( $ch );
 
 `* account` is your Account ID<br />
 `* key` is your API Key<br />
-`* id` is a valid Lead ID
+`* data` is the JSON formatted API request data
 
 ```
+
+$data 	=array(
+    'id'           => 999
+);
+    
 	
 $fields = array(
     'account'      =>  999,
     'key'          =>  '1RBrXUqIpUcyKma5',
-    'id'           =>  999
+    'data'         =>  json_encode( $data )
 );
 
 $ch = curl_init();
