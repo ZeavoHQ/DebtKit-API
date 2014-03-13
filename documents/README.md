@@ -11,14 +11,14 @@ For details on what ID variables to pass to the API, contact [support@debtkit.co
 
 `* account` is your Account ID<br />
 `* key` is your API Key<br />
-`* solution` is a valid product/solution<br />
+`* product_id` is a valid product ID<br />
 
 ```
 	
 $fields = array(
     'account'     =>  999,
     'key'         =>  '1RBrXUqIpUcyKma5',
-    'solution'    =>  'iva'
+    'product_id'  =>  999
 );
 
 $ch = curl_init();
