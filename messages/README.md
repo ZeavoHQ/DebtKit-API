@@ -5,24 +5,28 @@ Messages
 
 For details on what ID variables to pass to the API, contact [support@debtkit.co.uk](mailto:support@debtkit.co.uk)
 
-## List Messages ##
+## Send Message ##
 
-`POST /messages/get.json` will list all Email and SMS messaging methods for an application.
+`POST /messages/send.json` will send a template message to a customer.
 
 `* account` is your Account ID<br />
 `* key` is your API Key<br />
-`* id` is a valid Application ID
+`* app_id` is a valid Application ID<br />
+`* template_id` is a valid Message Template ID<br />
+`* user_id` is a valid User ID
 
 ```
 	
 $fields = array(
     'account'     =>  999,
     'key'         =>  '1RBrXUqIpUcyKma5',
-    'id'          =>  999
+    'app_id'      =>  999,
+    'template_id' =>  999,
+    'user_id'     =>  999
 );
 
 $ch = curl_init();
-curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/messages/get.json' );
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/messages/send.json' );
 curl_setopt( $ch, CURLOPT_POST, count( $fields ) );
 curl_setopt( $ch, CURLOPT_POSTFIELDS, http_build_query( $fields ) );
 $result = curl_exec( $ch );
