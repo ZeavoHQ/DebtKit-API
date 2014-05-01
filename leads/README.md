@@ -23,6 +23,7 @@ $data 	=array(
     'phone_type'         => 'home',
     'email_address'      => 'john.smith@debtkit.co.uk',
     'introducer_id'      => 999,
+    'marketing_sub_id'   => 'SBrT5RwU',
     'advisor_id'         => 999,
     'lead_group_id'      => 999,
     'lead_type_id'       => 999,
