@@ -33,7 +33,7 @@ $data = array(
 $ch = curl_init();
 curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/leads/create.json' );
 curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
-curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $fields ) );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
 $result = curl_exec( $ch );
 curl_close( $ch );
 
@@ -62,7 +62,7 @@ $data = array(
 $ch = curl_init();
 curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/leads/all.json' );
 curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
-curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $fields ) );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
 $result = curl_exec( $ch );
 curl_close( $ch );
 
@@ -83,7 +83,7 @@ $data = array(
 $ch = curl_init();
 curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/leads/get.json' );
 curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
-curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $fields ) );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
 $result = curl_exec( $ch );
 curl_close( $ch );
 
@@ -107,7 +107,7 @@ $data = array(
 $ch = curl_init();
 curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/leads/update.json' );
 curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
-curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $fields ) );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
 $result = curl_exec( $ch );
 curl_close( $ch );
 
