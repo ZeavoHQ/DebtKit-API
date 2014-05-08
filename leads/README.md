@@ -1,8 +1,6 @@
 Leads
 =======
 
-For details on the API, contact [support@debtkit.co.uk](mailto:support@debtkit.co.uk)
-
 ## Create Lead ##
 
 `POST /leads/create.json` will create a new lead.
