@@ -15,7 +15,7 @@ For details on what ID variables to pass to the API, contact [support@debtkit.co
 
 ```
 
-$data 	=array(
+$data = array(
     'account'            => 999,
     'key'                => '1RBrXUqIpUcyKma5',
     'title'              => 'Mr',
