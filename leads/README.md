@@ -23,8 +23,8 @@ $data = array(
     'lead_group_id'      => 0,
     'lead_type_id'       => 0,
     'custom' => array(
-        'Debt Level'     => '3000',
-        'Contact Method' => 'Home Phone at Weekends'
+        'debt_level'     => '3000',
+        'contact_method' => 'Home Phone at Weekends'
     )
 );
 
