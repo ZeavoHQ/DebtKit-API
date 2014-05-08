@@ -9,10 +9,6 @@ For details on what ID variables to pass to the API, contact [support@debtkit.co
 
 `POST /leads/create.json` will create a new lead.
 
-`* account` is your Account ID<br />
-`* key` is your API Key<br />
-`* data` is the JSON formatted API request data
-
 ```
 
 $data = array(
@@ -50,10 +46,6 @@ curl_close( $ch );
 
 `POST /leads/all.json` will list all leads.
 
-`* account` is your Account ID<br />
-`* key` is your API Key<br />
-`* data` is the JSON formatted API request data
-
 ```
 
 $data = array(
@@ -82,10 +74,6 @@ curl_close( $ch );
 
 `POST /leads/get.json` will get a lead.
 
-`* account` is your Account ID<br />
-`* key` is your API Key<br />
-`* data` is the JSON formatted API request data
-
 ```
 
 $data 	=array(
@@ -106,10 +94,6 @@ curl_close( $ch );
 ## Update Lead Status ##
 
 `POST /leads/update.json` will update a lead status.
-
-`* account` is your Account ID<br />
-`* key` is your API Key<br />
-`* data` is the JSON formatted API request data
 
 ```
 
