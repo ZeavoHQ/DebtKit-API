@@ -76,7 +76,7 @@ curl_close( $ch );
 
 ```
 
-$data 	=array(
+$data = array(
     'account'      => 999,
     'key'          => '1RBrXUqIpUcyKma5',
     'id'           => 999
