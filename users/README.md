@@ -1,8 +1,6 @@
 Users
 =======
 
-For more details on the API, contact [support@debtkit.co.uk](mailto:support@debtkit.co.uk)
-
 ## List Users ##
 
 `POST /users/all.json` will list all users.
