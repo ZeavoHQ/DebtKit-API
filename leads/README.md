@@ -1,9 +1,7 @@
 Leads
 =======
 
-`*` Represents a required variable
-
-For details on what ID variables to pass to the API, contact [support@debtkit.co.uk](mailto:support@debtkit.co.uk)
+For details on the API, contact [support@debtkit.co.uk](mailto:support@debtkit.co.uk)
 
 ## Create Lead ##
 
