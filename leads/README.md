@@ -22,9 +22,10 @@ $data = array(
     'advisor_id'         => 0,
     'lead_group_id'      => 0,
     'lead_type_id'       => 0,
+    'debt_level'         => 12500,
     'custom' => array(
-        'debt_level'     => '3000',
-        'contact_method' => 'Home Phone at Weekends'
+        'monthly_income' => '1800',
+        'time_to_call'   => 'Weekday Mornings'
     )
 );
 
