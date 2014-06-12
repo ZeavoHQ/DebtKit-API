@@ -3,7 +3,7 @@ Customers
 
 ## Get Customer ##
 
-`POST /customers/get.json` will create a new lead.
+`POST /customers/get.json` will retrieve a customer.
 
 ```
 
