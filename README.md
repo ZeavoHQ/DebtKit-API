@@ -21,7 +21,6 @@ We only support JSON for serialization of data. **All API URLs end in .json to i
 
 ## API Endpoints ##
 
-* [Leads](https://github.com/zeavouk/DebtKit-API/tree/master/leads)
 * [Customers](https://github.com/zeavouk/DebtKit-API/tree/master/customers)
 
 ## Support ##
