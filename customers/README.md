@@ -14,7 +14,7 @@ $data = array(
 );
 
 $ch = curl_init();
-curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/customers/get' );
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/customers/get.json' );
 curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
 curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
 $result = curl_exec( $ch );
@@ -24,7 +24,7 @@ curl_close( $ch );
 
 ## Create Customer ##
 
-`POST /leads/create.json` will create a new customer.
+`POST /customers/create.json` will create a new customer.
 
 ```
 
@@ -50,7 +50,7 @@ $data = array(
 );
 
 $ch = curl_init();
-curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/leads/create' );
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/customers/create.json' );
 curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
 curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
 $result = curl_exec( $ch );
