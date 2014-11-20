@@ -41,10 +41,10 @@ $data = array(
     'introducer_id'      => 0,
     'lead_group_id'      => 0,
     'lead_type_id'       => 0,
-    'debt_level'         => 12500,
     'custom' => array(
         'monthly_income' => '1800',
-        'time_to_call'   => 'Weekday Mornings'
+        'time_to_call'   => 'Weekday Mornings',
+        'debt_level'     => 12500
     )
 );
 
