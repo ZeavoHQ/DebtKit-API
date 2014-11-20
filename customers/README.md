@@ -39,7 +39,6 @@ $data = array(
     'email_address'      => 'john.smith@debtkit.co.uk',
     'postal_code'        => 'A123BC',
     'introducer_id'      => 0,
-    'marketing_sub_id'   => 'SBrT5RwU',
     'lead_group_id'      => 0,
     'lead_type_id'       => 0,
     'debt_level'         => 12500,
