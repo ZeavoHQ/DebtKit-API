@@ -8,7 +8,6 @@ Customers
 ```
 
 $data = array(
-    'account'            => 999,
     'key'                => '1RBrXUqIpUcyKma5',
     'reference'          => 'ABC12345'
 );
@@ -29,7 +28,6 @@ curl_close( $ch );
 ```
 
 $data = array(
-    'account'            => 999,
     'key'                => '1RBrXUqIpUcyKma5',
     'title'              => 'Mr',
     'first_names'        => 'John',
