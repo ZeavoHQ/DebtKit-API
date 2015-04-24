@@ -11,7 +11,7 @@ To access different DebtKit modules and functions, you will be required to appen
 
 ## Authentication ##
 
-A DebtKit API Key is required to authenticate your request. API Keys can be created and retreieved by signing into your DebtKit account and going to Options->API Keys. 
+A DebtKit API Key is required to authenticate your request. API Keys can be created and retrieved by signing into your DebtKit account and going to Options->API Keys. 
 
 This data is then POSTed as part of the API request.
 
