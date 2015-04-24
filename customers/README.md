@@ -40,14 +40,111 @@ $data = array(
     'lead_group_id'      => 0,
     'lead_type_id'       => 0,
     'custom' => array(
-        'monthly_income' => '1800',
-        'time_to_call'   => 'Weekday Mornings',
-        'debt_level'     => 12500
+        'key1'     => 'value1',
+        'key2'     => 'value2',
+        'key3'     => 'value3'
     )
 );
 
 $ch = curl_init();
 curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/customers/create.json' );
+curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
+$result = curl_exec( $ch );
+curl_close( $ch );
+
+```
+
+## Post Comment ##
+
+`POST /customers/comments-insert.json` will post a comment to an existing customer's timeline.
+
+```
+
+$data = array(
+    'key'                => '1RBrXUqIpUcyKma5',
+    'reference'          => 'ABC123',
+    'comments'           => 'This is a comment',
+    'user_id'            => 0,
+    'debt_id'            => 0
+);
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/customers/comments-insert.json' );
+curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
+$result = curl_exec( $ch );
+curl_close( $ch );
+
+```
+
+## Update Status ##
+
+`POST /customers/status-insert.json` will update the status of an existing customer.
+
+```
+
+$data = array(
+    'key'                => '1RBrXUqIpUcyKma5',
+    'reference'          => 'ABC123',
+    'stage_id'           => 1,
+    'status_id'          => 0,
+    'user_id'            => 0,
+    'comments'           => 'This is a comment'
+);
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/customers/status-insert.json' );
+curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
+$result = curl_exec( $ch );
+curl_close( $ch );
+
+```
+
+## Post Online Application Data ##
+
+`POST /customers/edit-online-application.json` will post the fields from an online application to an existing customer.
+
+```
+
+$data = array(
+    'key'                => '1RBrXUqIpUcyKma5',
+    'reference'          => 'ABC123',
+    'custom' => array(
+        'key1'     => 'value1',
+        'key2'     => 'value2',
+        'key3'     => 'value3'
+    )
+);
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/customers/edit-online-application.json' );
+curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
+$result = curl_exec( $ch );
+curl_close( $ch );
+
+```
+
+## Post Compliance Data ##
+
+`POST /customers/edit-compliance-data.json` will post the fields from a compliance form to an existing customer.
+
+```
+
+$data = array(
+    'key'                => '1RBrXUqIpUcyKma5',
+    'reference'          => 'ABC123',
+    'custom' => array(
+        'key1'     => 'value1',
+        'key2'     => 'value2',
+        'key3'     => 'value3'
+    )
+);
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/customers/edit-compliance-data.json' );
 curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
 curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
 $result = curl_exec( $ch );
