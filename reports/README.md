@@ -24,3 +24,21 @@ $result = curl_exec( $ch );
 curl_close( $ch );
 
 ```
+
+## Get Properties ##
+
+`POST /reports/get-properties.json` will retrieve a list of all the available reporting properties.
+
+```
+
+$data = array(
+    'key' => '1RBrXUqIpUcyKma5'
+);
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/reports/get-properties.json' );
+curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
+$result = curl_exec( $ch );
+curl_close( $ch );
+
