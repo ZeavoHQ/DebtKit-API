@@ -47,3 +47,29 @@ $result = curl_exec( $ch );
 curl_close( $ch );
 
 ```
+
+## Upload File ##
+
+`POST /files/upload.json` will upload a file to a specific customer you define.
+
+```
+
+$data = array();
+
+$data[ 'json' ] = array(
+    'key'       => '1RBrXUqIpUcyKma5',
+    'reference' => 'ABC123',
+    'debt_id'   => 0,
+    'user_id'   => 0
+);
+
+$data[ 'file' ] = "@file.pdf;filename='file.pdf';type=application/pdf"
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/files/upload.json' );
+curl_setopt( $ch, CURLOPT_POST, true );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, $data );
+$result = curl_exec( $ch );
+curl_close( $ch );
+
+```
