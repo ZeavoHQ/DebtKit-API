@@ -56,12 +56,12 @@ curl_close( $ch );
 
 $data = array();
 
-$data[ 'json' ] = array(
+$data[ 'json' ] = json_encode( array(
     'key'       => '1RBrXUqIpUcyKma5',
     'reference' => 'ABC123',
     'debt_id'   => 0,
     'user_id'   => 0
-);
+) );
 
 $data[ 'file' ] = "@file.pdf;filename='file.pdf';type=application/pdf"
 
