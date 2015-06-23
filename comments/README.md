@@ -1,3 +1,29 @@
+Comments
+=======
+
+## Get Comments ##
+
+`POST /comments/get.json` will retrieve a list of comments based on optional filters you send.
+
+```
+
+$data = array(
+    'key'                => '1RBrXUqIpUcyKma5',
+    'reference'          => 'ABC123',
+    'debt_id'            => 0,
+    'user_id'            => 0,
+    'date'               => '2015-01-31' // YYYY-MM-DD
+);
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/comments/get.json' );
+curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
+$result = curl_exec( $ch );
+curl_close( $ch );
+
+```
+
 ## Post Comment ##
 
 `POST /comments/post.json` will post a comment to an existing customer's timeline.
