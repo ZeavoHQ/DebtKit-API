@@ -48,6 +48,26 @@ curl_close( $ch );
 
 ```
 
+## Remove File ##
+
+`POST /files/remove.json` will remove a file based on the file ID you send.
+
+```
+
+$data = array(
+    'key' => '1RBrXUqIpUcyKma5',
+    'id'  => 0
+);
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/files/remove.json' );
+curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
+$result = curl_exec( $ch );
+curl_close( $ch );
+
+```
+
 ## Upload File ##
 
 `POST /files/upload.json` will upload a file to a specific customer you define.
