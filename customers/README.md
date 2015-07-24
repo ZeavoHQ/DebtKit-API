@@ -128,3 +128,28 @@ $result = curl_exec( $ch );
 curl_close( $ch );
 
 ```
+
+## Set Custom JSON ##
+
+`POST /customers/json-set.json` will store any custom JSON stored against a existing customer.
+
+```
+
+$data = array(
+    'key'         => '1RBrXUqIpUcyKma5',
+    'reference'   => 'ABC123',
+    'custom_json' => array(
+        'key1'     => 'value1',
+        'key2'     => 'value2',
+        'key3'     => 'value3'
+    )
+);
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/customers/json-set.json' );
+curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
+$result = curl_exec( $ch );
+curl_close( $ch );
+
+```
