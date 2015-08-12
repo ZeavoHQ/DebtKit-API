@@ -39,6 +39,7 @@ $data = array(
     'introducer_id'      => 0,
     'lead_group_id'      => 0,
     'lead_type_id'       => 0,
+    'debt_level'         => 1000,
     'custom' => array(
         'key1'     => 'value1',
         'key2'     => 'value2',
