@@ -15,7 +15,7 @@ $data = array(
     'user_id'               => 0,
     'call_length'           => 120, // integer in seconds
     'phone_number'          => '07123 456789',
-    'call_outcome'          => 'NA',
+    'call_outcome'          => 'Answer Machine',
     'manual_automatic'      => 'automatic' // manual or automatic
 );
 
