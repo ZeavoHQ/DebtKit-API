@@ -13,7 +13,6 @@ $data = array(
     'datetime_call_started' => '2015-01-01 00:00:00', // mandatory
     'datetime_call_ended'   => '2015-01-01 00:00:00',
     'user_id'               => 0,
-    'call_length'           => 120, // integer in seconds
     'phone_number'          => '07123 456789',
     'call_outcome'          => 'Answer Machine',
     'manual_automatic'      => 'automatic' // manual or automatic
