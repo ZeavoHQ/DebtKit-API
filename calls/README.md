@@ -8,11 +8,11 @@ Calls
 ```
 
 $data = array(
-    'key'   => '1RBrXUqIpUcyKma5', // mandatory,
+    'key'   => '1RBrXUqIpUcyKma5',
     'calls' => array(
-        array( '
-            'reference'             => 'ABC12345', // mandatory
-            'datetime_call_started' => '2015-01-01 00:00:00', // mandatory
+        array(
+            'reference'             => 'ABC12345',
+            'datetime_call_started' => '2015-01-01 00:00:00',
             'datetime_call_ended'   => '2015-01-01 00:00:00',
             'user_id'               => 0,
             'answered'              => 1, // 1 or 0
