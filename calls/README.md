@@ -8,15 +8,19 @@ Calls
 ```
 
 $data = array(
-    'key'                   => '1RBrXUqIpUcyKma5', // mandatory
-    'reference'             => 'ABC12345', // mandatory
-    'datetime_call_started' => '2015-01-01 00:00:00', // mandatory
-    'datetime_call_ended'   => '2015-01-01 00:00:00',
-    'user_id'               => 0,
-    'answered'              => 1, // 1 or 0
-    'manual_automatic'      => 'automatic', // manual or automatic
-    'phone_number'          => '07123 456789',
-    'call_outcome'          => 'Answer Machine'
+    'key'   => '1RBrXUqIpUcyKma5', // mandatory,
+    'calls' => array(
+        array( '
+            'reference'             => 'ABC12345', // mandatory
+            'datetime_call_started' => '2015-01-01 00:00:00', // mandatory
+            'datetime_call_ended'   => '2015-01-01 00:00:00',
+            'user_id'               => 0,
+            'answered'              => 1, // 1 or 0
+            'manual_automatic'      => 'automatic', // manual or automatic
+            'phone_number'          => '07123 456789',
+            'call_outcome'          => 'Answer Machine'
+        )
+    )
 );
 
 $ch = curl_init();
