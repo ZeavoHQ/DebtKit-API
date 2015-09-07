@@ -16,6 +16,7 @@ $data = array(
             'datetime_call_ended'   => '2015-01-01 00:00:00',
             'user_id'               => 0,
             'answered'              => 1, // 1 or 0
+            'successful'            => 1, // 1 or 0
             'manual_automatic'      => 'automatic', // manual or automatic
             'phone_number'          => '07123 456789',
             'call_outcome'          => 'Answer Machine'
