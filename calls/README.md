@@ -17,6 +17,7 @@ $data = array(
             'user_id'               => 0,
             'answered'              => 1, // 1 or 0
             'manual_automatic'      => 'automatic', // manual or automatic
+            'direction'             => 'outbound', // outbound or inbound
             'phone_number'          => '07123 456789',
             'call_outcome'          => 'Answer Machine'
         )
