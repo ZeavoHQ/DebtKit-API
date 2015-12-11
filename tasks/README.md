@@ -25,3 +25,27 @@ $result = curl_exec( $ch );
 curl_close( $ch );
 
 ```
+## Create Task ##
+
+`POST /tasks/create.json` will create a task for an existing customer.
+
+```
+
+$data = array(
+    'key'             => '1RBrXUqIpUcyKma5',
+    'reference'       => 'ABC123',
+    'description'     => 'Requested Callback',
+    'date'            => '2015-01-31', // YYYY-MM-DD
+    'time'            => '12:30', // HH:MM
+    'user_id'         => 0,
+    'team_id'         => 0
+);
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/tasks/create.json' );
+curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
+curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
+$result = curl_exec( $ch );
+curl_close( $ch );
+
+```
