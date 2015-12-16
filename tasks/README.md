@@ -49,9 +49,9 @@ curl_close( $ch );
 
 ```
 
-## Update Task ##
+## Edit Task ##
 
-`POST /tasks/update.json` will update an existing task.
+`POST /tasks/edit.json` will edit an existing task.
 
 ```
 
@@ -66,7 +66,7 @@ $data = array(
 );
 
 $ch = curl_init();
-curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/tasks/update.json' );
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/tasks/edit.json' );
 curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
 curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
 $result = curl_exec( $ch );
