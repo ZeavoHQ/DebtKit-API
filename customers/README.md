@@ -13,7 +13,7 @@ $data = array(
 );
 
 $ch = curl_init();
-curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1/customers/get.json' );
+curl_setopt( $ch, CURLOPT_URL, 'https://api.debtkit.co.uk/v1.1/customers/get.json' );
 curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, 'POST' );
 curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
 $result = curl_exec( $ch );
